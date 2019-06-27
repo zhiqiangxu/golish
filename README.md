@@ -1,6 +1,6 @@
 # golish
 
-像写`go`一样写`cpp`!
+像写`go`一样写`c/cpp`!
 
 ## 前提
 
@@ -8,7 +8,7 @@
 
 ## 为何需要
 
-`go`可能并不是最优雅的语言，但确是静态类型语言中编译最方便的语言。
+`go`可能并不是最优雅的语言，但确是静态类型语言中编译极为方便的语言。
 其中有些特性对于大型项目的布局起到了很关键的作用：
 
 1. 可以把方法的实现分散到多个文件中，防止文件过大
@@ -18,7 +18,10 @@
 
 ## 如何撸
 
+`CMakeLists.txt`:
 ```cmake
+
+include(GolishUtils.cmake) # 按需调整路径
 golish_collect_files(
     DIR src_dir
     OUTPUT_VAR COLLECTED_SOURCES
