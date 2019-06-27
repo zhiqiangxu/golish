@@ -30,7 +30,7 @@ golish_collect_files(
 add_executable(main ${COLLECTED_SOURCES})
 ```
 
-上面的`golish_collect_files`方法会用类似`go`的“口味”去去收集`src_dir`里的源文件，并将文件列表追加到`COLLECTED_SOURCES`变量中。
+上面的`golish_collect_files`方法会用类似`go`的“口味”去收集`src_dir`里的源文件，并将文件列表追加到`COLLECTED_SOURCES`变量中。
 
 - 具体来说，目录中的源文件可以像`go`那样自由地拆分；（参照[`test/split_class`](https://github.com/zhiqiangxu/golish/tree/master/test/split_class)）
 - 并且如果文件名以`android`、`darwin`、`linux`、`windows`其中之一结尾，就只会把当前`platform`对应的文件编译进去。（参照[`test/platform_source`](https://github.com/zhiqiangxu/golish/tree/master/test/platform_source)）
