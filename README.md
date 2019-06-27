@@ -30,7 +30,7 @@ golish_collect_files(
 add_executable(main ${COLLECTED_SOURCES})
 ```
 
-上面的`golish_collect_files`方法会用类似`go`的“口味”去收集`src_dir`里的源文件，并将文件列表追加到`COLLECTED_SOURCES`变量中。
+上面的`golish_collect_files`方法会用类似`go`的“口味”去收集`src_dir`中的源文件，并将文件列表追加到`COLLECTED_SOURCES`变量中。
 
 具体来说：
 
