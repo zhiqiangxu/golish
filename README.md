@@ -23,8 +23,8 @@
 
 include(GolishUtils.cmake) # 按需调整路径
 golish_collect_files(
-    DIR src_dir
-    OUTPUT_VAR COLLECTED_SOURCES
+    DIR src_dir # 源代码所在目录
+    OUTPUT_VAR COLLECTED_SOURCES # 收集文件列表的变量名
 )
 
 add_executable(main ${COLLECTED_SOURCES})
